@@ -1,5 +1,5 @@
 {% set name = "geogif" %}
-{% set version = "0.1.5" %}
+{% set version = "0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/geogif-{{ version }}.tar.gz
-  sha256: 508dc902a6ecba86ca40297428da37202551acccfd2237290c324ac8fd21a075
+  sha256: 91c08b3a2cfa73ac7be5d8523d645e9d05d7a2a131667f771758fa3feee3f4f3
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - python >=3.8.0,<4.0.0
     - dask-core >=2021.4.1
     - numpy >=1.20.2,<2.0.0
-    - pillow >=10.0.0,<11.0.0
+    - pillow >=10.1.0,<11.0.0
     - matplotlib-base >=3.4.1,<4.0.0
     - xarray >=0.18
     - typing_extensions

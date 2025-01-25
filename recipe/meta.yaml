@@ -1,5 +1,5 @@
 {% set name = "geogif" %}
-{% set version = "0.2" %}
+{% set version = "0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/geogif-{{ version }}.tar.gz
-  sha256: 91c08b3a2cfa73ac7be5d8523d645e9d05d7a2a131667f771758fa3feee3f4f3
+  sha256: 559ad993d8cb9d4c86347a75aae9c38ec920a273abf9b29cba14ed1264dc143d
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
